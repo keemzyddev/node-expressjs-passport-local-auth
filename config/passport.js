@@ -19,7 +19,7 @@ module.exports = function (passport) {
             });
           }
 
-          //Match user
+          //Match password
           let isMatch = await bcrypt.compare(password, user.password);
 
           if (isMatch) {
